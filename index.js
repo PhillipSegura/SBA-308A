@@ -23,7 +23,7 @@ async function fetchData() {
       .getElementById("pokemonName")
       .value.toLowerCase();
     const response = await fetch(
-      "https://pokeapi.co/api/v2/pokemon/${pokemonName}"
+      `https://pokeapi.co/api/v2/pokemon/${pokemonName}`
     );
 
     if (!response.ok) {
